@@ -162,6 +162,7 @@ class Resume extends Component<any, any> {
       },
       {
         company: "ALPHA",
+        
         title: "A Toolkit for Automated Local Phylogenomic Analyses",
         date: "Published: 19 March 2018",
         description: "Bioinformatics, bty173, https://doi.org/10.1093/bioinformatics/bty173",

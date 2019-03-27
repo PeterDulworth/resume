@@ -93,10 +93,12 @@ class Resume extends Component<IProps, any> {
     };
   }
 
-  async componentDidMount() {
-      const resp = await fetch('./resumeData.json');
-      console.log(resp);
-      // this.setState({ loaded: true })
+  componentDidMount = async () => {
+      let resp = await fetch('http://peterdulworth.com/resume/resumeData.json');
+      let dataJson = await resp.json();
+      console.log(JSON.stringify(dataJson));
+      this.setState({ data: dataJson})
+      this.setState({ loaded: true })
   }
 
   render() {

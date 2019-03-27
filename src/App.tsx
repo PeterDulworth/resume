@@ -96,13 +96,11 @@ class Resume extends Component<IProps, any> {
   componentDidMount = async () => {
       let resp = await fetch('http://peterdulworth.com/resume/resumeData.json');
       let dataJson = await resp.json();
-      console.log(JSON.stringify(dataJson));
-      this.setState({ data: dataJson})
-      this.setState({ loaded: true })
+      this.setState({ data: dataJson, loaded: true });
   }
 
   render() {
-    if (!this.state.loaded) return null;
+    if (!this.state.loaded) return (<div>loading ...</div>);
 
     let workExpComps = this.state.data.work.map((x: any, i: any) => { return (<Entry company={x.company} title={x.title} date={x.date} description={x.description}></Entry>); });
     let educationComps = this.state.data.education.map((x: any, i: any) => { return (<Entry company={x.company} title={x.title} date={x.date} description={x.description}></Entry>); });

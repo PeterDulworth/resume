@@ -1,16 +1,16 @@
 {
   "name": "resume",
   "version": "0.1.0",
-  "homepage" : "http://peterdulworth.com/resume/build",
+  "homepage": "http://peterdulworth.com/resume/build",
   "private": true,
   "dependencies": {
     "@types/jest": "23.3.13",
     "@types/node": "10.12.18",
-    "@types/react": "16.7.20",
-    "@types/react-dom": "16.0.11",
+    "@types/react": "16.8.0",
+    "@types/react-dom": "16.8.0",
     "node-sass": "^4.11.0",
-    "react": "^16.7.0",
-    "react-dom": "^16.7.0",
+    "react": "^16.8.0",
+    "react-dom": "^16.8.0",
     "react-scripts": "2.1.3",
     "typescript": "3.2.4"
   },

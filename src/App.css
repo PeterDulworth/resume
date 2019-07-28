@@ -1,0 +1,159 @@
+body {
+  font-family: "Helvetica Neue", sans-serif;
+  font-size: 80%;
+  padding-top: 1%;
+  padding-bottom: 1%;
+  line-height: 1.5;
+  margin: 0;
+  color: #212529;
+  background: #ededed;
+}
+
+@media (max-width: 800px) {
+  body {
+    background: white;
+  }
+}
+
+.container {
+  background: white;
+  padding-left: 5vw;
+  padding-right: 5vw;
+  width: 60vw;
+  margin-left: auto;
+  margin-right: auto;
+  min-height: 96vh;
+}
+
+@media (max-width: 1115px) {
+  .container {
+    width: 80vw;
+  }
+}
+
+.title-row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.title-row > div {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  word-wrap: break-word;
+  border-left: 2vw solid transparent;
+  -ms-flex-negative: 1;
+      flex-shrink: 1;
+  -webkit-box-flex: 0;
+      -ms-flex-positive: 0;
+          flex-grow: 0;
+}
+
+@media (max-width: 1115px) {
+  .title-row > div {
+    width: 100% !important;
+  }
+}
+
+.title-row > div:nth-of-type(odd) {
+  width: 66.66667%;
+}
+
+.title-row > div:nth-of-type(even) {
+  width: 33.33333%;
+}
+
+.title {
+  font-size: 300%;
+  font-weight: bold;
+}
+
+.sub-title {
+  font-size: 100%;
+}
+
+.section {
+  color: #267bc3;
+  font-weight: 600;
+}
+
+a {
+  color: #267bc3;
+  text-decoration: underline;
+}
+
+.font-weight-normal {
+  font-weight: normal;
+}
+
+h6 {
+  font-size: 1rem;
+}
+
+.header {
+  margin: 0;
+  padding: 0;
+}
+
+.bodyText {
+  margin: 0;
+  color: gray;
+}
+
+p {
+  margin-top: 0;
+  margin-bottom: 1rem !important;
+}
+
+.date {
+  color: DarkGray;
+  line-height: 2;
+}
+
+.navBar {
+  padding-top: 3vh;
+  padding-bottom: 3vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.left {
+  border: solid gray;
+  border-width: 0 3px 3px 0;
+  display: inline-block;
+  padding: 3px;
+  transform: rotate(135deg);
+  -webkit-transform: rotate(135deg);
+}
+
+.home {
+  color: gray;
+  text-decoration: none;
+}
+
+.home:hover {
+  color: inherit;
+  text-decoration: underline;
+}
+
+#summary, #address {
+  margin-bottom: 2rem;
+}
+/*# sourceMappingURL=App.css.map */
